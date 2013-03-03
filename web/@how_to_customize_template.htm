@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>How to customize this template</title><style type="text/css">
+<!--
+body {font-family: Verdana, Arial, Helvetica, sans-serif;font-size:11px}
+.Style1 {color: #FF0000}
+.Style3 {color: #339966}
+.Style5 {color: #FF0000; font-weight: bold; }
+.Style6 {color: #000000}
+-->
+  </style></head>
+<body>
+
+
+
+<p><u>How to customize dynamic flash intro ?</u><u> </u><br />
+
+<br />Open and edit custom.xml file with notepad. Replace red values by yours.&nbsp;Becarfull to <span class="Style5">not </span>add "#" before colors.&nbsp;</p><p><strong>NOTICE&nbsp;: Skip intro link&nbsp;only work when intro is online.</strong></p><p>Customization example : <br />
+
+</p>&lt;configuration&gt;<br />&nbsp; &lt;!-- Parameters : play_button
+: set the "play" at the beginning of the animation | value : yes/no --&gt;<br />&nbsp;
+&lt;!-- Parameters : play_color : set color on the play button | value : hexadecimal code --&gt;<br />&nbsp;
+&lt;!-- Parameters : graphic_color : set color progression bar for
+loading |
+value : hexadecimal code --&gt;<br />&nbsp; &lt;!-- Parameters :
+text_color : set color text in progression bar for loading | value :
+hexadecimal code --&gt;<br />&nbsp; &lt;!-- Parameters : loop : set the
+adjustment to replay the introduction in loop | value :
+yes/no --&gt;<br />&nbsp; &lt;display_preload loop="<span style="color: red;">yes</span>" play_button="no" play_color="<span style="color: red;">345fba</span>" graphic_color="<span style="color: red;">345fba</span>" text_color="<span style="color: red;">FFFFFF</span>"&gt;<span style="color: red;">downloading</span>&lt;/display_preload&gt;<br />&nbsp; &lt;!-- Change&nbsp; display="no" if you don't want to have a "Skip Intro" Button --&gt;<br />&nbsp;
+&lt;!-- Parameters : display : set the adjustment for the "Skip Intro"
+button | value : yes/no
+--&gt;<br />&nbsp; &lt;!-- Parameters : graphic_color : set color for
+the "Skip Intro" link | value : hexadecimal code --&gt;<br />&nbsp; &lt;!-- Parameters
+: link : Link adress after clicking on the "Skip Intro" button | value : http
+adress --&gt;<br />&nbsp; &lt;skip_intro display="<span style="color: red;">yes</span>" graphic_color="<span style="color: red;">345fba</span>" link="<span style="color: red;">http://www.google.com</span>"&gt;<span style="color: red;">Skip intro</span>&lt;/skip_intro&gt;<br />&nbsp; &lt;!-- Change&nbsp; play="no" if you don't want to play music in the animation&nbsp; --&gt;<br />&nbsp;
+&lt;!-- Parameters : loop : set the adjustment to replay the loop of
+sound | value : yes/no --&gt;<br />&nbsp;
+&lt;!-- Parameters : graphic_color : set color animation for sound
+button and text |
+value : hexadecimal code --&gt;<br />&nbsp; &lt;!-- Parameters :
+music_control : set the adjustment to show or not the sound button | value : yes/no
+--&gt;<br />&nbsp; &lt;!-- Parameters : play_music : play the music or not | value : hexadecimal code --&gt;<br />&nbsp;
+&lt;!-- Parameters : file : Link adress for the sound file | value : relative folder adress --&gt;<br />&nbsp; &lt;music_file loop="<span style="color: red;">yes</span>" graphic_color="<span style="color: red;">345fba</span>" music_control="<span style="color: red;">yes</span>" play_music="<span style="color: red;">yes</span>" file="<span style="color: red;">files/sound/music.mp3</span>"&gt;<span style="color: red;">Sound</span>&lt;/music_file&gt;<br />&nbsp; &lt;!-- animation&nbsp; text --&gt;<br />&nbsp;
+&lt;!-- Parameters : typo1 &amp; typo2 : Name of the typographie for
+each line of text&nbsp; | value : Arial / Times New Roman / "" --&gt;<br />&nbsp; &lt;!--
+Parameters : texttransition : text apparition animation type | value type1 : transparency from 0 to
+100% / type2 : blur filter with transparency / type3 : inverted blur /
+type4 : enlarge the text from 100% to 300% / type5 : reduce the text
+from 100% to 25%--&gt;<br />&nbsp; &lt;!-- Parameters : posx / posy :
+Position of the Text in px (x,y) from the top left corner at the
+beginning of the move | value : number in px --&gt;<br />&nbsp;
+&lt;!-- Parameters : pos2x / pos2y : Position of the Text in px (x,y)
+from the top left corner at the end of the move | value :
+number in px --&gt;<br />&nbsp; &lt;!-- Parameters : espacement : set
+the distance in pixel between the two line of text from the top of the
+first text |
+value : number in px --&gt;<br />&nbsp; &lt;!-- Parameters : center :
+set the text animation at the middle of the text or on top left corner | value : yes/no --&gt;<br />&nbsp;
+&lt;!-- Parameters : duration : set the length of the animation move in
+milliseconds | value : number in ms --&gt;<br />&nbsp; &lt;!--
+Parameters : wait : Pause at the end of animation in milliseconds | value : number in ms --&gt;<br />&nbsp;
+&lt;!-- Parameters : stay : The last frame of animation remains visible
+if = 1| value :
+1/0 --&gt;<br />&nbsp; &lt;!-- Parameters : color : set color for the
+animated text&nbsp; | value :
+hexadecimal code --&gt;<br />&nbsp; &lt;!-- Parameters : font_size : Size of the Text in px | value : number in px --&gt;<br />&nbsp;
+&lt;!-- Parameters : letter_spacing : Set the space between letters in
+px | value : number in
+px --&gt;<br />&nbsp; &lt;animations typo1="" typo2=""&gt; &nbsp;<br /><br />&nbsp;&nbsp;&nbsp; &lt;!-- Animation Part 1 --&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;animation texttransition=<span style="color: red;">"type4</span>" duration="<span style="color: red;">3000</span>" wait="<span style="color: red;">1000</span>" stay="<span style="color: red;">0</span>" posx="<span style="color: red;">285</span>" posy="<span style="color: red;">155</span>" pos2x="<span style="color: red;">285</span>" pos2y="<span style="color: red;">155</span>" espacement="<span style="color: red;">15</span>" center="<span style="color: red;">yes</span>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;text color="<span style="color: red;">FFFFFF</span>" font_size="<span style="color: red;">10</span>" letter_spacing="<span style="color: red;">3</span>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;![CDATA[<span style="color: red;">YOUR WEBSITE SLOGAN</span>]]&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/text&gt; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;text color="<span style="color: red;">FFFFFF</span>" font_size="<span style="color: red;">7</span>" letter_spacing="<span style="color: red;">7</span>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;![CDATA[<span style="color: red;">YOUR INTRO TEXT</span>]]&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/text&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/animation&gt;<br />&nbsp;&nbsp;&nbsp; &lt;!-- Animation Part 2 --&gt;<br />&nbsp;&nbsp;&nbsp; &lt;animation texttransition="<span style="color: red;">type4</span>" duration="<span style="color: red;">5000</span>" wait="<span style="color: red;">1000</span>" stay="<span style="color: red;">0</span>" posx="<span style="color: red;">275</span>" posy="<span style="color: red;">220</span>" pos2x="<span style="color: red;">275</span>" pos2y="<span style="color: red;">155</span>" espacement="<span style="color: red;">15</span>" center="<span style="color: red;">yes</span>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;text color="<span style="color: red;">3f376a</span>" font_size="<span style="color: red;">7</span>" letter_spacing="<span style="color: red;">3</span>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;![CDATA[<span style="color: red;">CHOOSE YOUR TEXT COLOR</span>]]&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/text&gt; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;text color="<span style="color: red;">FFFFFF</span>" font_size="<span style="color: red;">7</span>" letter_spacing="<span style="color: red;">1.7</span>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;![CDATA[<span style="color: red;">CHOOSE YOUR TEXT TRANSISTION</span>]]&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/text&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/animation&gt;<br /><br />&nbsp; &lt;/animations&gt;&nbsp; <br />&lt;/configuration&gt;</body></html>
